@@ -11,6 +11,7 @@
 * {
     box-sizing: border-box;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -20,6 +21,8 @@ main {
     grid-template-columns:  225px 5fr;
  
 }
+
+/* nav style */
 
 nav {
     display: grid;
@@ -38,6 +41,10 @@ nav {
     margin: 1em 0 1em;
 }
 
+.logo:active {
+    -webkit-transform: scale(1.04); 
+}
+
 .logo img {
     margin: .8em;
 }
@@ -48,6 +55,14 @@ nav {
     text-decoration: none;
     color: var(--light-font);
     margin-bottom: .8em;
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+ul li:active {
+    -webkit-transform: scale(1.04); 
 }
 
 .material-icons {
@@ -75,3 +90,19 @@ header {
     background-color: var(--dark-bg-cl);
     color: var(--dark-font);
 }
+
+/* Header style */
+
+button[type="search"] {
+    /* appearance: none; */
+    border: none;
+}
+button[type="search"]:hover {
+    cursor: pointer;
+}
+
+button[type="search"] span:active {
+    font-weight: 600;
+}
+
+    
