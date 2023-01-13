@@ -18,7 +18,7 @@
 main {
     height: 100vh;
     display: grid;
-    grid-template-rows: 170px 1fr;
+    grid-template-rows: 160px 1fr;
     grid-template-columns:  225px 5fr;
  }
 
@@ -67,7 +67,7 @@ ul li:active {
     -webkit-transform: var(--active-scale); 
 }
 
-.material-icons {
+.links .material-icons {
     position: relative;
     top: 5px;
     margin-right: 15px;
@@ -97,6 +97,23 @@ header {
 
 /* Header Style */
 
+header {
+    z-index: 1;
+    box-shadow: 0 2px 3px rgb(155, 155, 155);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 1.2em;
+    height: 4em
+}
+
+.search form{
+    display: flex;
+    align-items: center;
+}
+
 .search form button {
     border: none;
     cursor: pointer;
@@ -106,17 +123,13 @@ button[type="search"] span:active {
     -webkit-transform: var(--active-scale);
 }
 
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    margin: 1em 2em;
-}
-
 .search,
 .profile-bar {
     display: flex;
     align-items: center;
-    margin-top: 1em;
+}
+.profile-bar > *{
+    margin: .4em;
 }
 
 .user-avatar-small img{
@@ -133,12 +146,12 @@ button[type="search"] span:active {
 display: flex;
 align-items: center;
 justify-content: space-between;
+margin: 0 1.2em .5em;
 }
 
 .user-greeting {
     display: flex;
     align-items: center;
-    margin-left: 2em;
 }
 
 .user-greeting img {
@@ -165,7 +178,9 @@ justify-content: space-between;
     appearance: none;
     background-color: var(--nav-bg-cl);
     color: var(--light-font);
-    padding: .5em 1em;
+    font-size: 1em;
+    padding: .5em 1.7em;
     border: none;
     border-radius: 999px;
+    margin: .5em;
 }
