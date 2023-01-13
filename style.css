@@ -99,16 +99,60 @@ header {
 /* Header Style */
 
 button[type="search"] {
-
     border: none;
-}
-button[type="search"]:hover {
-    cursor: pointer;
 }
 
 button[type="search"] span:active {
-    /* font-weight: 600; */
     -webkit-transform: var(--active-scale);
 }
 
-    
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search,
+.profile-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.user-avatar-small img{
+    height: 2.5em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-avatar-small img:active{
+    -webkit-transform: var(--active-scale);
+}
+
+.header-bottom {
+
+}
+
+.user-greeting {
+    display: flex;
+    align-items: center;
+}
+
+.user-greeting img {
+    height: 5em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-greeting img:active {
+    -webkit-transform: var(--active-scale);
+}
+
+.greeting p:first-child {
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.greeting p:last-child {
+    font-size: 1.5em;
+    font-weight: 600;
+}
