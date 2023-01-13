@@ -10,14 +10,14 @@
 
 * {
     box-sizing: border-box;
-
+    margin: 0px;
 }
 
 main {
     height: 100vh;
     display: grid;
     grid-template-rows: 170px 1fr;
-    grid-template-columns:  1fr 5fr;
+    grid-template-columns:  225px 5fr;
  
 }
 
@@ -27,6 +27,32 @@ nav {
     grid-column: 1;
     background-color: var(--nav-bg-cl);
     color: var(--light-font);
+    align-content: start;
+    gap: 3em;
+    }
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 1em 0 1em;
+}
+
+.logo img,
+.logo h1 {
+    margin: .8em;
+}
+
+.links *,
+.settings * {
+    list-style: none;
+    text-decoration: none;
+    color: var(--light-font);
+    margin-bottom: 1.3em;
+}
+
+li img {
+    color: white;
 }
 
 header {
