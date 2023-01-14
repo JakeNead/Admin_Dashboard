@@ -4,7 +4,7 @@
     --dark-font:hsl(0, 0%, 5%);
     --nav-bg-cl:hsl(221, 52%, 43%);
     --light-bg-cl: hsl(0, 0%, 95%);
-    --dark-bg-cl: hsl(0, 0%, 90%);
+    --dark-bg-cl: hsl(221, 20%, 85%);
     --acc-cl: hsl(37, 98%, 53%);
     --active-scale: scale(1.04);
 }
@@ -104,14 +104,17 @@ header {
 
 .header-top {
     display: flex;
-    justify-content: space-between;
     margin: 0em 1.2em;
-    height: 4em
+}
+
+.search {
+    flex-grow: 1;
 }
 
 .search form{
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .search form button {
@@ -123,12 +126,26 @@ button[type="search"] span:active {
     -webkit-transform: var(--active-scale);
 }
 
+.search input {
+    border-radius: 999px;
+    border: none;
+    background-color: var(--dark-bg-cl);
+    padding: 7px;
+    font-size: 1em;
+    width: 100%;
+    margin-right: 40%;
+}
+
+.search input:focus {
+    outline: 1px solid var(--nav-bg-cl);
+}
+
 .search,
 .profile-bar {
     display: flex;
     align-items: center;
 }
-.profile-bar > *{
+.profile-bar > * {
     margin: .4em;
 }
 
@@ -162,6 +179,10 @@ margin: 0 1.2em .5em;
 
 .user-greeting img:active {
     -webkit-transform: var(--active-scale);
+}
+
+.greeting p {
+    margin: 10px;
 }
 
 .greeting p:first-child {
